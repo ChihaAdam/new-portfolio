@@ -13,7 +13,12 @@ function DarkMode() {
     setMounted(true);
   }, []);
   if (!mounted) {
-    return null;
+    //prevent layout shift
+    return (
+      <Button className="cursor-pointer" variant="secondary">
+        <Moon />
+      </Button>
+    );
   }
 
   return (
