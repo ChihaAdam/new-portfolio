@@ -41,7 +41,7 @@ export const metadata: Metadata = {
       "the portfolio of adam chiha , a web developer who uses MERN stack to build web applications that are performant , scalable , user-friendly , secure and visible",
     images: [
       {
-        url: "/open-graph.png",
+        url: "/openGraph.png",
         width: 1757,
         height: 726,
         alt: "adam chiha",
