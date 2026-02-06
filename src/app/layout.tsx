@@ -92,6 +92,9 @@ export const metadata: Metadata = {
   verification: {
     google: "o8voPqo5tM9au1eDrTm05ZZFyh26n7SwRrc2Cbfif0U",
   },
+  other: {
+    "msvalidate.01": "4E9ABD47AAD43D4121D9838658A030B4",
+  },
 };
 
 export default function RootLayout({
