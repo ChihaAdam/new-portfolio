@@ -4,17 +4,26 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function getItem(key: string, defaultValue: string) {
+export function getItem(key: string, defaultValue: boolean) {
+  // check if it is a client component
   if (typeof window !== "undefined") {
-    // check if it is a client component
-    return localStorage.getItem(key) || defaultValue;
+    try {
+      const item = localStorage.getItem(key);
+      return item ? JSON.parse(item) : defaultValue;
+    } catch (err) {
+      console.error(err);
+    }
   }
   return defaultValue;
 }
 
-export function setItem(key: string, value: string) {
+export function setItem(key: string, value: boolean) {
+  // check if it is a client component
   if (typeof window !== "undefined") {
-    // check if it is a client component
-    localStorage.setItem(key, value);
+    try {
+      localStorage.setItem(key, JSON.stringify(value));
+    } catch (err) {
+      console.error(err);
+    }
   }
 }
