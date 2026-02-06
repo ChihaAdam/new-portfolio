@@ -27,7 +27,7 @@ function DarkMode() {
       className="cursor-pointer"
       variant="secondary"
     >
-      {darkMode === "true" ? <Sun /> : <Moon />}
+      {darkMode ? <Sun /> : <Moon />}
     </Button>
   );
 }
