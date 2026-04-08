@@ -15,7 +15,13 @@ function DarkMode() {
   if (!mounted) {
     //prevent layout shift
     return (
-      <Button className="cursor-pointer" variant="secondary">
+      <Button
+        className="cursor-pointer"
+        variant="secondary"
+        aria-label="dark mode"
+        title="dark mode"
+        role="button"
+      >
         <Moon />
       </Button>
     );
@@ -26,6 +32,8 @@ function DarkMode() {
       onClick={toggleDarkMode as React.MouseEventHandler<HTMLButtonElement>}
       className="cursor-pointer"
       variant="secondary"
+      aria-label="dark mode"
+      title="dark mode"
     >
       {darkMode ? <Sun /> : <Moon />}
     </Button>

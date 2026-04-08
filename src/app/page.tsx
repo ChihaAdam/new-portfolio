@@ -9,7 +9,7 @@ function Page() {
   return (
     <>
       <Navbar />
-      <main className="xl:px-20 md:px-10 pb-10">
+      <main className="xl:px-20 md:px-10 pb-10 flex flex-col gap-14">
         <Home />
         <Skills />
         <Certificates />

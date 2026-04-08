@@ -1,6 +1,7 @@
 export type sectionsType = {
   name: string;
   href: string;
+  ariaLabel: string;
 };
 
 export type skillsType = {
@@ -44,4 +45,9 @@ export type contactCardProps = {
   text: string;
   icon: string;
   link: string;
+};
+
+export type keywordsType = {
+  text: string;
+  className: string;
 };

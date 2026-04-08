@@ -14,5 +14,13 @@
   {
     "name": "wintercup 7.o",
     "image_url": "/certificates/wintercup7.o.jpg"
+  },
+  {
+    "name": "CCNA (introduction to networks)",
+    "image_url": "/certificates/CCNA-introduction-to-networks.jpg"
+  },
+  {
+    "name": "claude code in Action",
+    "image_url": "/certificates/claude-code-in-action.jpg"
   }
 ]

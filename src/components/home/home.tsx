@@ -1,7 +1,6 @@
 import Image from "next/image";
 import KeyPoints from "./key-points";
 import Bio from "./bio";
-
 async function Home() {
   return (
     <section
@@ -9,13 +8,15 @@ async function Home() {
       id="home"
     >
       <Image
-        src="/avatar.jpg"
+        src="/avatar.png"
         alt="avatar"
-        width={500}
-        height={500}
-        className="rounded-full border-8 border-green-700 size-xl max-sm:w-64 max-sm:h-64"
+        width={600}
+        height={600}
+        className="rounded-full"
+        fetchPriority="high"
+        loading="eager"
       />
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 flex-1">
         <Bio />
         <KeyPoints />
       </div>

@@ -1,7 +1,7 @@
 function Bio() {
   return (
-    <div className="flex flex-col gap-5">
-      <h1 className="text-4xl font-bold text-gradiant">about me</h1>
+    <div className="flex flex-col gap-5" aria-label="about me">
+      <h2 className="text-4xl font-bold text-gradiant">about me</h2>
       <p className="text-xl">
         I am a computer science student and full-stack JavaScript developer
         focused on the MERN stack and TypeScript. I am passionate about web
