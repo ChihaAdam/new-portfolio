@@ -12,8 +12,8 @@ function Navbar() {
         </div>
         <h1 className="text-3xl">my portfolio</h1>
       </div>
-      <div className="flex items-center flex-wrap justify-center gap-4">
-        <nav className="flex items-center gap-4">
+      <div className="flex items-center flex-wrap  justify-center max-sm:justify-between gap-4">
+        <nav className="flex max-sm:grid max-sm:grid-cols-2 items-center gap-4">
           {sections.map((section) => (
             <Button
               variant="link"

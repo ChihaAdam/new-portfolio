@@ -1,7 +1,7 @@
 import type { projectCardProps } from "@/@types/types";
 import Image from "next/image";
 
-function card({
+function ProjectCard({
   title,
   snapshot,
   description,
@@ -9,35 +9,36 @@ function card({
   repository,
 }: Readonly<projectCardProps>) {
   return (
-    <div className="flex flex-col gap-2 bg-white dark:bg-gray-800 p-4 rounded-lg w-fit justify-between shadow-md">
-      <div className="relative w-96 h-auto aspect-video">
+    <article className="flex w-full max-w-sm flex-col justify-between gap-2 rounded-lg bg-white p-4 shadow-md dark:bg-gray-800">
+      <div className="relative aspect-video w-full">
         <Image
           src={snapshot}
           alt={title}
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(max-width: 640px) 100vw, 384px"
           className="object-contain"
           loading="lazy"
         />
       </div>
+
       <h3 className="text-center text-xl font-semibold">{title}</h3>
-      <p className="text-center text-lg font-semibold max-w-sm">
-        {description}
-      </p>
-      <div className="flex gap-10 justify-center">
+
+      <p className="text-center text-lg font-semibold">{description}</p>
+
+      <div className="flex flex-wrap justify-center gap-x-10 gap-y-2">
         {demo && (
-          <a href={demo} className="text-center text-md  font-semibold">
+          <a href={demo} className="text-md font-semibold">
             demo
           </a>
         )}
         {repository && (
-          <a href={repository} className="text-center text-md font-semibold">
+          <a href={repository} className="text-md font-semibold">
             repository
           </a>
         )}
       </div>
-    </div>
+    </article>
   );
 }
 
-export default card;
+export default ProjectCard;
