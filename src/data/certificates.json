@@ -22,5 +22,13 @@
   {
     "name": "claude code in Action",
     "image_url": "/certificates/claude-code-in-action.jpg"
+  },
+  {
+    "name": "aws cloud practitioner essentials",
+    "image_url": "/certificates/aws-certified-cloud-practitioner.jpg"
+  },
+  {
+    "name": "working with llama3: datacamp",
+    "image_url": "/certificates/working-with-llama3-datacamp.jpg"
   }
 ]
